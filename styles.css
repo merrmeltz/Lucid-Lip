@@ -37,17 +37,20 @@ section {
 
 .ll-button {
     height: 35px;
-    color: #bb4a4a;
-    border: #bb4a4a solid 3px;
-    border-radius: 5px;
-    background-color: transparent;
     font-weight: 600;
     letter-spacing: 1px;
+    border-radius: 5px;
+    background-color: #bb4a4a;
+    border:#bb4a4a solid;
+    color: #f6f6e9;
+    box-shadow: none;
 }
 
 .ll-button:hover, .ll-button:active {
-    background-color: #bb4a4a;
-    color: #f6f6e9;
+    color: #bb4a4a;
+    border: #bb4a4a solid 3px;
+    background-color: transparent;
+
 }
 
 /* h2::after{
@@ -101,7 +104,7 @@ header {
     transition: all .2s;
 }
 
-.nav {
+nav {
     width: 100%;
 }
 
@@ -135,11 +138,10 @@ header {
 
 }
 
-.nav-menu a:hover, i:hover, 
-.nav-menu a:hover, i:active {
+.nav-menu a:hover,nav i:hover, 
+.nav-menu a:hover,nav i:active {
     color: #DBB628;
     text-decoration: none;
-
 }
 
 @media screen and (max-width: 992px) {
@@ -200,6 +202,30 @@ header {
 }
 
 
+/* Listen */
+
+.listen {
+    /* max-width: 40%; */
+    margin: auto;
+    padding: 10% 30% ;
+}
+
+@media screen and (max-width: 992px) {
+    .listen {
+        padding: 10% 20% ;
+    }   
+}
+
+@media screen and (max-width: 640px) {
+    .listen {
+        padding: 10% ;
+    }   
+}
+
+
+
+/* footer */
+
 footer {
     height: 50%;
     width: 100%;
@@ -217,9 +243,16 @@ footer {
 .follow h1, h2 {
     font-weight: 900;
 }
+.donate {
+    font-size: 1em;
+    line-height: 0;
+    color: #bb4a4a;
+    vertical-align: middle;
+}
+
 
 footer .socials-menu {
-    padding: 10px 0 25px 0;
+    padding: 15px 0 40px 0;
 }
 
 
@@ -227,14 +260,24 @@ footer .socials-menu {
     font-size: 25px;
 }
 
+.follow a {
+    color: #bb4a4a;
+}
+
+.follow i:hover, .donate:hover, .donate a:hover {
+    text-decoration: none;
+    color: #f6f6e9;
+}
+
 .email-box {
     border-radius: 5px;
     padding: 2px;
-    margin-top: 8px;
+    margin: 10px 0 20px 0;
     width: 30%;
     height: 35px;
     border: #bb4a4a solid 1px;
 }
+
 
 
 
